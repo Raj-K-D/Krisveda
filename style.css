@@ -1,14 +1,16 @@
-/* Reset and Global Styles */body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
   background: linear-gradient(180deg, #f3faff 0%, #4ad4f7 100%);
+  box-sizing: border-box;
 }
 
 .gradient-header {
   background: linear-gradient(to right, #569fe7, #1183cf);
   color: #fff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -20,18 +22,19 @@
 
 .business-info {
   text-align: center;
+  flex: 1 1 100%;
 }
 
 .business-info h1 {
   color: #eb1717;
   margin: 0;
-  font-size: 1;
+  font-size: 2em;
   font-weight: bolder;
 }
 
 .business-info p {
   margin: 0;
-  font-size: 0.8;
+  font-size: 1em;
   color: black;
 }
 
@@ -40,10 +43,12 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-menu li {
-  margin-right: 20px;
+  margin: 10.2px;
+  
 }
 
 .navigation-menu a {
@@ -58,307 +63,335 @@
   color: #58D68D;
 }
 
-  
-  /* Hero Section Styles */
-  .hero-section {
-    background: linear-gradient(135deg, #82c4e0, #63a0bd);
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .hero-content h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #fff; /* Set the heading text color */
-  }
-  
-  .hero-content p {
-    font-size: 1.5em;
-    margin-bottom: 40px;
-    color: #f0f0f0; /* Set the paragraph text color */
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #3498DB;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #58D68D;
-  }
-  
-  
-  /* About Section Styles */
-  .about-section {
-    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
-    color: #0D47A1; /* Dark blue color for text */
-    text-align: center;
-    padding: 100px 20px; /* Adjust the padding as needed */
-  }
-  
-  .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .about-content h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .about-content p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #1565C0; /* Slightly lighter blue for text */
-  }
-  
-  .about-section ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  .about-section li {
-    font-weight: bold;
-    color: #558B2F; /* Green color for list items */
-  }
-  
-  
-  /* Product Showcase Styles */
-  .product-showcase {
-    background: linear-gradient(135deg, #e6ee9e, #c5e1a5);
-    color: #333;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .product-categories {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .product-categories h2 {
-    font-size: 3em;
-    margin-bottom: 40px;
-    font-weight: bold;
-    color: #1565C0; /* Blue color for heading */
-  }
-  
-  .product-category {
-    margin-bottom: 40px;
-    overflow: hidden; /* Ensure proper alignment and overflow handling */
-  }
-  
-  .product-category img {
-    width: 60%;
-    height:auto; /* Maintain image aspect ratio */
-     /* Set a maximum height for consistency */
-    object-fit: cover; /* Cover the entire element with the image */
-    border-radius: 8px;
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-  }
-  
-  .product-category:hover img {
-    transform: scale(1.1); /* Zoom in slightly on hover */
-  }
-  
-  .product-category h3 {
-    font-size: 2em;
-    margin-top: 20px;
-    color: #558B2F; /* Green color for heading */
-  }
-  
-  .product-category p {
-    font-size: 1.2em;
-    color: #666; /* Slightly darker gray for text */
-  }
-  
-  
-  
-  
-  
-  /* Why Choose Us Section Styles */
-  .why-choose-us {
-    background: linear-gradient(135deg, #f6f7d4, #d0e6a5);
-    color: #0D47A1; /* Dark blue color for text */
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .quality-assurance, .sustainability-practices {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .quality-assurance h2, .sustainability-practices h2 {
-    font-size: 3em;
-    margin-bottom: 40px;
-    font-weight: bold;
-    color: #1565C0; /* Blue color for heading */
-  }
-  
-  .quality-assurance p, .sustainability-practices p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #333; /* Darker gray for text */
-  }
-  
-  .quality-assurance ul, .sustainability-practices ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .quality-assurance li, .sustainability-practices li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #558B2F; /* Green color for list items */
-  }
-  
-  
-  /* CTA Section Styles */
-  .cta-section {
-    background: linear-gradient(135deg, #fdebd0, #fad02e);
-    color: #333;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .cta-section h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #1565C0; /* Blue color for heading */
-  }
-  
-  .cta-section p {
-    font-size: 1.5em;
-    margin-bottom: 40px;
-    color: #666; /* Slightly darker gray for text */
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #558B2F; /* Green color for button */
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #1565C0; /* Darker blue on hover */
-  }
-  
-  
-  /* Contact Section Styles */
-  .contact-section {
-    background: linear-gradient(135deg, #e1f5fe, #b3e0f2);
-    color: #333;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .contact-info, .social-media {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .contact-info h2, .social-media h2 {
-    font-size: 3em;
-    margin-bottom: 40px;
-    font-weight: bold;
-    color: #1565C0; /* Blue color for heading */
-  }
-  
-  .contact-info p, .social-media p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #666; /* Darker gray for text */
-  }
-  
-  .contact-info ul, .social-media ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-info li, .social-media li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info a, .social-media a {
-    color: #1183cf;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .contact-info a:hover, .social-media a:hover {
-    color: #569fe7; /* Lighter blue on hover */
-  }
-  
-  
-  /* Footer Section Styles */
-  .footer-section {
-    background: linear-gradient(135deg, #283c86, #45a247);
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    transition: background 0.3s ease;
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(135deg, #82c4e0, #63a0bd);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #3498DB;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #58D68D;
+}
+
+/* About Section Styles */
+.about-section {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  color: #0D47A1;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #1565C0;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.about-section li {
+  font-weight: bold;
+  color: #558B2F;
+}
+
+/* Product Showcase Styles */
+.product-showcase {
+  background: linear-gradient(135deg, #e6ee9e, #c5e1a5);
+  color: #333;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.product-categories {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product-categories h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #1565C0;
+}
+
+.product-category {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.product-category img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-category:hover img {
+  transform: scale(1.1);
+}
+
+.product-category h3 {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #558B2F;
+}
+
+.product-category p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Why Choose Us Section Styles */
+.why-choose-us {
+  background: linear-gradient(135deg, #f6f7d4, #d0e6a5);
+  color: #0D47A1;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.quality-assurance, .sustainability-practices {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quality-assurance h2, .sustainability-practices h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #1565C0;
+}
+
+.quality-assurance p, .sustainability-practices p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quality-assurance ul, .sustainability-practices ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quality-assurance li, .sustainability-practices li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #558B2F;
+}
+
+/* CTA Section Styles */
+.cta-section {
+  background: linear-gradient(135deg, #fdebd0, #fad02e);
+  color: #333;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #1565C0;
+}
+
+.cta-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background: linear-gradient(135deg, #e1f5fe, #b3e0f2);
+  color: #333;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-info, .social-media {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info h2, .social-media h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #1565C0;
+}
+
+.contact-info p, .social-media p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.contact-info ul, .social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li, .social-media li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.contact-info a, .social-media a {
+  color: #1183cf;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover, .social-media a:hover {
+  color: #569fe7;
+}
+
+/* Footer Section Styles */
+.footer-section {
+  background: linear-gradient(135deg, #283c86, #45a247);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  transition: background 0.3s ease;
 }
 
 .footer-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-nav li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .footer-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .footer-nav a:hover {
-    color: #FFD700; /* Gold color on hover */
+  color: #FFD700;
 }
 
 .legal-info p {
-    font-size: 1em;
-    margin: 10px 0;
+  font-size: 1em;
+  margin: 10px 0;
 }
 
 .legal-info .footer-link {
-    color: #FFD700;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .legal-info .footer-link:hover {
-    color: #fff; /* White color on hover */
+  color: #fff;
 }
 
+/* Responsive Styles */
+@media (max-width: 650px) {
+
+
+    .navigation-menu{
+      display: flex;
+      justify-content: space-around;
+    }
+
+  .navigation-menu ul {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+  }
   
+  .navigation-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .business-info h1 {
+      display: none;
+      
+    }
+
+  #home{
+      justify-content: center;
+  }
+
+  .hero-section {
+    padding: 50px 10px;
+  }
+  
+  .hero-content h2 {
+    font-size: 2em;
+  }
+  
+  .hero-content p {
+    font-size: 1em;
+  }
+  
+  .about-section, .product-showcase, .why-choose-us, .cta-section, .contact-section {
+    padding: 50px 10px;
+  }
+  
+  .about-content h2, .product-categories h2, .quality-assurance h2, .sustainability-practices h2, .cta-section h2, .contact-info h2, .social-media h2 {
+    font-size: 2em;
+  }
+  
+  .about-content p, .product-category p, .quality-assurance p, .sustainability-practices p, .cta-section p, .contact-info p, .social-media p {
+    font-size: 1em;
+  }
+  
+  .product-category img {
+    max-width: 100%;
+  }
+}
